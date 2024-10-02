@@ -1,0 +1,315 @@
+body {
+  --color-background: white;
+  --color-foreground: #1f2023;
+  --color-hover: #f0f0f0;
+  --color-bgthemes: white;
+}
+body.dark {
+  --color-background: #1f2023;
+  --color-foreground: white;
+  --label-color: black;
+  --color-hover: #909090;
+  --color-bgthemes: #555555;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: roboto;
+  margin-top: 0;
+  
+}
+
+.componentsParent {
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  
+}
+
+.navbar{
+  height: 8%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: 0;
+  background-color: var(--color-background);
+}
+
+.navbarPart1{
+  margin-left: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.navbarPart2{
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.navbarPart3{
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.yt-heading{
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.navbarPart4{
+  margin-left: 15%;
+  margin-top: 7px;
+  width: 70%;
+  position: relative;
+  
+}
+
+.navbarPart4 > form > input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  
+}
+
+.navbarPart4 > form > label {
+  position: absolute;
+  top: 0.4px;
+  left: calc(100% - 27px);
+  cursor: pointer;
+  color: var(--label-color);
+}
+
+.navbarPart5 {
+  margin-left: 10%;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.navbarPart6 {
+  margin-left: 20%;
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+.navbarPart7 {
+  margin-left: 2%;
+  width: 110px;
+  height: 100%;
+  margin-right: 2%;
+}
+
+.nbButton {
+  border-radius: 30px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 110px;
+  height: 40px;
+  margin-top: 7%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.displayNone {
+  display: none;
+}
+
+.mobileSearch {
+  display: flex;
+  height: 8%;
+  width: 100%;
+  margin-top: 10px;
+  position: fixed;
+}
+
+.backArrowDiv {
+  margin-top: 4px;
+}
+
+.searchAreaDiv {
+  width: 60%;
+  margin-left: 12%;
+  margin-right: 15%;
+}
+
+.searchAreaDiv > input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.options{
+  position: absolute;
+  margin-left: calc(100vw - 430px);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: var(--color-bgthemes);
+  margin-top: 50px;
+}
+
+.optionsitem{
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-right: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  border-radius: 10px;
+
+}
+
+.optionsitem:hover {
+  background-color: var(--color-hover); 
+}
+
+#optionsitem1{
+  margin-top: 8px;
+}
+
+.bgThemes{
+  position: absolute;
+  margin-left: calc(100vw - 420px);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: var(--color-bgthemes);
+  margin-top: 50px;
+}
+
+.bgThemesForm{
+  border-radius: 10px;
+}
+
+.bgThemesForm:hover {
+  background-color: var(--color-hover);
+}
+
+.bgThemesForm > input {
+  background-color: var(--color-bgthemes);
+  color: var(--color-foreground); 
+  font-size: 16px;
+  font-family: roboto;
+}
+
+.bgThemesForm > input:hover {
+  background-color: var(--color-hover);
+}
+
+.flex{
+  display: flex;
+  cursor: pointer;
+  color: var(--color-foreground);
+  text-decoration: none;
+  background-color: var(--color-background);
+  
+}
+
+
+
+.flex:hover{
+  background-color: var(--color-hover) ;
+}
+
+.hamburgerParent{
+  margin-top: 70px;
+  margin-left: 11px;
+  width: 220px;
+  overflow: scroll;
+  position: fixed;
+  height: 90%;
+  background-color: var(--color-background);
+}
+
+.hamburgerParentSetToSlide{
+  margin-top: 0;
+  margin-left: -100%;
+  width: 220px;
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
+  transition: margin-left 0.4s;
+  position: absolute;
+  background-color: var(--color-background);
+}
+
+
+
+.showHamburgerParent{
+  margin-left: 0;
+}
+
+.hamburgerBorder{
+  border-bottom: 0.4px solid grey;
+  background-color: var(--color-background);
+}
+
+.hamSmallScreenParent{
+  margin-top: 60px;
+  margin-left: 0;
+  width: 60px;
+  position: fixed;
+}
+
+.hamMenuParaSmallScreen{
+  margin-top: 0;
+  font-size: 12px;
+  
+}
+
+.iconToCenter{
+  margin-left: 15px;
+}
+
+.smallHamMarginBottom{
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+}
+
+.smallHamMarginBottom:hover{
+  background-color: var(--color-hover) ;
+}
+
+.videoBox{
+  display: grid;
+  gap: 7% 1%;
+  margin-top: 70px;
+  height: 90%;
+  overflow-x: hidden;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.videoUnit{
+  border-radius: 10px;
+}
+
+.action{
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
+#player{
+  border-radius: 10px;
+}
+
+.sideVideosDiv{
+  position: absolute;
+  margin-left: 68%;
+  margin-top: 90px;
+  width: 30%;
+  z-index: 1;
+
+}
+
+.textOverflow{
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
